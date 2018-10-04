@@ -64,7 +64,7 @@ OPS_Parameter()
     int paramTag;
     int num = 1;
     if (OPS_GetIntInput(&num, &paramTag) < 0) {
-	opserr << "WARING: parameter - failed to get parameter tag\n";
+	opserr << "WARNING: parameter - failed to get parameter tag\n";
 	return -1;
     }
 
@@ -87,7 +87,7 @@ OPS_Parameter()
 	}
 
 	if (OPS_SetIntOutput(&num, &paramTag) < 0) {
-	    opserr << "WARING: parameter - failed to set parameter tag\n";
+	    opserr << "WARNING: parameter - failed to set parameter tag\n";
 	    return -1;
 	}
 
@@ -112,7 +112,7 @@ OPS_Parameter()
 	}
 
 	if (OPS_SetIntOutput(&num, &paramTag) < 0) {
-	    opserr << "WARING: parameter - failed to set parameter tag\n";
+	    opserr << "WARNING: parameter - failed to set parameter tag\n";
 	    return -1;
 	}
 
@@ -152,7 +152,7 @@ OPS_Parameter()
 		}
 
 		if (OPS_SetIntOutput(&num, &paramTag) < 0) {
-		    opserr << "WARING: parameter - failed to set parameter tag\n";
+		    opserr << "WARNING: parameter - failed to set parameter tag\n";
 		    return -1;
 		}
 
@@ -198,7 +198,7 @@ OPS_Parameter()
 		}
 
 		if (OPS_SetIntOutput(&num, &paramTag) < 0) {
-		    opserr << "WARING: parameter - failed to set parameter tag\n";
+		    opserr << "WARNING: parameter - failed to set parameter tag\n";
 		    return -1;
 		}
 
@@ -353,7 +353,7 @@ OPS_Parameter()
     }
 
     if (OPS_SetIntOutput(&num, &paramTag) < 0) {
-	opserr << "WARING: parameter - failed to set parameter tag\n";
+	opserr << "WARNING: parameter - failed to set parameter tag\n";
 	return -1;
     }
 
@@ -377,7 +377,7 @@ OPS_addToParameter()
     int paramTag;
     int num = 1;
     if (OPS_GetIntInput(&num, &paramTag) < 0) {
-	opserr << "WARING: parameter - failed to get parameter tag\n";
+	opserr << "WARNING: parameter - failed to get parameter tag\n";
 	return -1;
     }
 
@@ -493,7 +493,7 @@ OPS_addToParameter()
     }
 
     if (OPS_SetIntOutput(&num, &paramTag) < 0) {
-	opserr << "WARING: parameter - failed to set parameter tag\n";
+	opserr << "WARNING: parameter - failed to set parameter tag\n";
 	return -1;
     }
 
@@ -517,7 +517,7 @@ OPS_updateParameter()
     int paramTag;
     int num = 1;
     if (OPS_GetIntInput(&num, &paramTag) < 0) {
-	opserr << "WARING: parameter - failed to get parameter tag\n";
+	opserr << "WARNING: parameter - failed to get parameter tag\n";
 	return -1;
     }
 
@@ -543,7 +543,7 @@ OPS_updateParameter()
     theDomain->updateParameter(paramTag, newValue);
 
     if (OPS_SetIntOutput(&num, &paramTag) < 0) {
-	opserr << "WARING: parameter - failed to set parameter tag\n";
+	opserr << "WARNING: parameter - failed to set parameter tag\n";
 	return -1;
     }
 
